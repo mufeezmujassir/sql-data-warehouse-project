@@ -1,3 +1,24 @@
+/*
+=======================================================
+Quality checks
+=======================================================
+Scripts purpose
+	this scripts performs various quality checks for data consistency,accuracy,
+	and standarization acrross the silver schema. It includes checks for:
+		-Null or duplicats values
+		-unwanted spaces in string field
+		-data standarization and consistency
+		-invalid date range and orders
+		-Date consistency between related fields
+Usage Notes:
+	-Run these checks after data loading silver layer
+	-investigate and resolve any discrepancies found during the checks
+	
+
+*/
+
+
+
 --===============================================
 --checking silver.erp_px_cat_g1v2
 
