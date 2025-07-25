@@ -60,3 +60,14 @@ LEFT JOIN silver.erp_px_cat_g1v2 pc
 ON pn.cat_id=pc.id
 )t GROUP BY prd_id
 having COUNT(*)>1
+
+
+
+SELECT * FROM gold.fact_sales fs
+LEFT JOIN gold.dim_customers dc
+ON fs.customer_key= dc.customer_key
+LEFT JOIN gold.dim_products dp
+ON fs.product_key =dp.product_key
+WHERE dp.product_key IS NULL
+
+   
